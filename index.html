@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    
+    <title>Fresitienda</title>
+</head>
+<body class="text-center" onload="cargarProductos();">
+    
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid text-center">
+        <h1 class="navbar-brand m-auto text-dark">Fresitienda</h1>
+    </div>
+</nav>
+
+
+
+    <div class="container-fluid w-75 m-auto">
+        <div class="card text-center mt-4">
+            <div class="card-header">
+                <img src="tienda.png" alt="" height="70px">
+            </div>
+
+   
+    <div class="container-fluid"  >
+        <div class="card text-center mt-4"  >
+           <div class="card-header"  >
+               <img src="tiendal.png" alt="" height="100px">
+           </div>
+           <div class="card-body"  >
+               <table class="table"  >
+        <tr>
+          <td>
+            <button class="btn btm-warning" data-bs-toggle="modal" data-bs-target="#gestionProductos" onclick="verProductos()">Gestor</button>
+          </td>
+           <td>
+               <h3>Producto</h3>
+           </td>
+           <td>
+               <h3>imagen</h3>
+           </td>
+           <td>
+               <h3>precio</h3>
+           </td>
+        <td>
+           <h3>cantidad</h3>
+        </td>
+        <td>
+           <h3>agregar</h3>
+        </td>
+
+        </tr>
+        <tr> 
+            
+          <td></td>
+           <td class="align-midle">
+           <select name="producto" id="productos" class="form-control">
+           </select>
+        </td>
+        <td class="align-midle">
+           <img src="tiendal.png" alt="" id="imgProducto" height="80px">
+        </td>
+        <td class="align-midle"><div id="precioProducto">$0</div></td>
+        <td class="align-midle">
+           <div id="vcantidad">1</div>
+           <input type="range" min="1" max="10" value="1" class="form-control" id="inputCantidad">
+        </td>
+        <td class="align-midle">
+           <button class="btn btn-primary" id="agregarCarrito">Agregar</button>
+        </td>
+        </tr>
+       </table>
+        <div id="carrito"></div>
+           </div>
+           <div class="card-footer text-body-secondary">
+               Lesliii
+           </div>
+        </div>
+           </div>
+  
+
+ <div class="modal fade" id="gestionProductos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class="modal-dialog  modal-dialog-centered modal-xl" >
+      <div class="modal-content" >
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">GESTION PRODUCTOS</h1> 
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        </div>
+        <div class="modal-body">
+          <table class="table w-100 m-auto">
+             <tr>
+                <td>
+                   <label for="producto" class="form-label">Nombre producto</label>
+                   <input type="text" class="form-control" id="nombreProducto">
+ 
+                </td>
+               
+                <td>
+                   <label for="precio" class="form-label">Precio</label>
+                   <input type="number" class="form-control" id="pProducto">
+                   
+                </td>
+                <td>
+                   <button onclick="addProducto()" class="btn btn-secondary">Agregar</button>
+ 
+                </td>
+             </tr>
+          </table>
+             
+             <h2>GESTION PRODUCTOS</h2>
+             <div id="listaProductos">
+ 
+          </div>
+       </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+<script src="sweetalert2.all.min.js"></script>
+<script src="bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
+
+</html>

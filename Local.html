@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALUMNOS</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+</head>
+
+  
+<body class="text-center">
+  <center>
+    <br>
+    <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#agregarR"0>Agregar
+    </button>
+    
+    <div class="modal fade" id="agregarR" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 w-100 m-auto" id="exampleModalLabel"> </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" class="form-control text-center">
+  
+            <label for="">ApellidoP:</label>
+            <input type="text" id="ap" class="form-control text-center">
+  
+            <label for="">Apellido M:</label>
+            <input type="text" id="am" class="form-control text-center">
+  
+            <label for="">Grupo:</label>
+            <select name="grupo" id="g" class="form-select text-center">
+
+
+              <option value="404">404</option>
+              <option value="405">405</option>
+              <option value="406">406</option>
+         
+            </select>
+  
+            <label for="c">Carrera:</label>
+            <select name="carrera" id="c" class="form-select text-center">
+              <option value="Ventas">Ventas</option>
+              <option value="Programación">Programación</option>
+              <option value="Máquinas">Máquinas</option>
+            </select>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" id="borrar" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" id="guardar" class="btn btn-primary" data-bs-dismiss="modal" aria-label="close">
+               Guardar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+    
+    <div id="res"></div>
+      
+    
+
+<div class="modal fade" id="actualizarR" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 w-100 m-auto" id="exampleModalLabel">Actualización de Registros</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nom" class="form-control  text-center">
+
+        <label for="ap">Apellido Paterno:</label>
+        <input type="text" id="apa" class="form-control  text-center">
+
+        <label for="am">Apellido Materno:</label>
+        <input type="text" id="ama" class="form-control  text-center">
+
+        <label for="g">Grupo:</label>
+        <select name="grupo" id="gr" class="form-select text-center">
+          <option value="401">401</option>
+          <option value="402">402</option>
+    <option value="403">403</option>
+<option value="404">404</option>
+<option value="405">405</option>
+<option value="406">406</option>
+<option value="407">407</option>
+        </select>
+
+        <label for="c">Carrera:</label>
+        <select name="carrera" id="ca" class="form-select text-center">
+          <option value="Ventas">Ventas</option>
+          <option value="Programación">Programación</option>
+          <option value="Máquinas y Herramientas">Máquinas y Herramientas</option>
+        </select>
+        
+
+      </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+          
+          <button type="button" id="actualizar" class="btn btn-primary" data-bs-dismiss="modal">
+            Actualizar
+        </button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+</center>
+<script src="bootstrap.bundle.min.js"></script>
+<script src="sweetalert2.all.min.js"></script>
+<script src="app2.js">
+  
+  
+  
+  
+  
+</script>
+</body>
+
+</html>
+
+
